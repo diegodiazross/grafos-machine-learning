@@ -8,12 +8,12 @@ digraph PeliculaDirector {
     Actor [label="Actor"];
     Año [label="Año"];
     Genero [label="Género"];
+    
     // Relación
     Pelicula -> Director [label="dirigida por"];
-    Pelicula -> Actor [label="actuo en"];
+    Actor -> Pelicula [label="actúo en"];  // Relación invertida
     Pelicula -> Genero [label="pertenece a"];
     Pelicula -> Año [label="estrenada en"];    
-   
-        
+}
     
 }
